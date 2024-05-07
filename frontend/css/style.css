@@ -1,20 +1,22 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
-:root{
-    font-size: 30px;
+:root {
+    font-size: 16px;
 }
 
-body{
-    background-image: url("../img/background-whatsapp.jpg");
+body {
+    background: url("../img/background-whatsapp.jpg");
     color: #f2f2f2;
 }
 
-.container{
+.container {
     width: 100%;
     height: 100dvh;
     display: flex;
@@ -22,7 +24,7 @@ body{
     justify-content: center;
 }
 
-.login{
+.login {
     width: 100%;
     max-width: 330px;
     background-color: #212121;
@@ -36,12 +38,14 @@ body{
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
-.login_form{
+
+.login__form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.login_input{
+
+.login__input {
     border: none;
     padding: 15px;
     font-size: 0.85rem;
@@ -51,10 +55,12 @@ body{
     outline: none;
     border-radius: 5px;
 }
-.login_input:focus{
+
+.login__input:focus {
     outline: 2px solid #f2f2f2;
 }
-.login_button{
+
+.login__button {
     border: none;
     padding: 15px;
     border-radius: 5px;
@@ -64,26 +70,28 @@ body{
     cursor: pointer;
     color: #121212;
 }
-.login_button:hover{
+
+.login__button:hover {
     background-color: #fff;
 }
 
-.chat{
+.chat {
     width: 100%;
     height: 100%;
     display: none;
     flex-direction: column;
     justify-content: space-between;
 }
-.chat_messages{
+
+.chat__messages {
     flex-grow: 1;
     padding: 30px 30px 90px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
 }
-.chat_form{
+
+.chat__form {
     background-color: #191919;
     padding: 15px 20px;
     display: flex;
@@ -94,7 +102,8 @@ body{
     left: 0;
     width: 100%;
 }
-.chat_input{
+
+.chat__input {
     border: none;
     padding: 15px;
     border-radius: 8px;
@@ -102,19 +111,22 @@ body{
     background-color: #212121;
     outline: none;
     color: #f2f2f2;
-    font-size: .5rem;
+    font-size: 1rem;
 }
-.chat_button{
+
+.chat__button {
     border: none;
     background: none;
     color: #f2f2f2;
     cursor: pointer;
 }
-.chat_button > span{
-    font-size: 1rem;
+
+.chat__button > span {
+    font-size: 1.8rem;
 }
-.chat_messages > div  {
-    padding: 15px;
+
+.chat__messages > div {
+    padding: 10px;
     width: 100%;
     max-width: 250px;
     font-size: 0.9rem;
@@ -122,22 +134,24 @@ body{
     margin-bottom: 15px;
     line-height: 22px;
 }
-.message_self{
-    background-color: #f2f2f2;
-    color: #212121;
+
+.message--self {
+    background-color: #57e165;
+    color: #121212;
     border-radius: 10px 10px 0 10px;
     align-self: flex-end;
 }
 
-.message_other{
+.message--other {
     background-color: #333;
     color: #f2f2f2;
     border-radius: 0 10px 10px 10px;
     align-self: flex-start;
 }
-.message_sender{
+
+.message--sender {
     display: block;
     margin-bottom: 15px;
     font-weight: 700;
-    color: aquamarine;
+    color: cadetblue;
 }

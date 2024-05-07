@@ -8,8 +8,9 @@ wss.on('connection', (ws) => {
 
     ws.on('error', console.error)
 
+  
+
     ws.on('message', (data)=>{
-        //quando enviar a mensagem
         wss.clients.forEach((client) => client.send(data.toString()))
     })
 
